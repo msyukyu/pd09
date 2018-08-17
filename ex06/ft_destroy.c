@@ -6,13 +6,12 @@
 /*   By: dabeloos <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/08/17 11:14:38 by dabeloos          #+#    #+#             */
-/*   Updated: 2018/08/17 11:48:49 by dabeloos         ###   ########.fr       */
+/*   Updated: 2018/08/17 11:49:45 by dabeloos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_ultimator.h"
 #include <stlib.h>
-#include <stdio.h>
 
 void	ft_destroy(char ***factory)
 {
