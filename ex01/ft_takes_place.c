@@ -6,7 +6,7 @@
 /*   By: dabeloos <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/08/16 18:21:17 by dabeloos          #+#    #+#             */
-/*   Updated: 2018/08/16 19:00:34 by dabeloos         ###   ########.fr       */
+/*   Updated: 2018/08/17 10:43:07 by dabeloos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	ft_takes_place(int hour)
 	char	m2;
 
 	hour = hour % 24;
-	h1 = hour % 12;
+	h1 = (hour % 12 == 0) ? 12 : hour % 12;
 	h2 = hour / 12;
 	if (h2 == 0)
 		m1 = 'A';
@@ -29,7 +29,7 @@ void	ft_takes_place(int hour)
 		m1 = 'P';
 	hour = hour + 1;
 	hour = hour % 24;
-	h2 = hour % 12;
+	h2 = (hour % 12 == 0) ? 12 : hour % 12;
 	h3 = hour / 12;
 	if (h3 == 0)
 		m2 = 'A';
