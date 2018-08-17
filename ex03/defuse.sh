@@ -1,3 +1,2 @@
-stat -f '%Sa' bomb.txt | grep -o "..:..:.."
-date | grep -o "..:..:.."
-touch -t MMDD1818.20 bomb.txt
+touch -A -000001 bomb.txt
+date -r bomb.txt '+%X'
